@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess The Word</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gradient-to-b from-indigo-950 via-purple-950 to-blue-950 text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="text-center py-6 bg-gradient-to-r from-indigo-900 via-purple-900 to-indigo-800 shadow-lg">
+    <h1 class="text-4xl font-extrabold drop-shadow-lg">Guess The Word</h1>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-1 max-w-6xl mx-auto mt-10 px-4">
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+      <!-- GAME AREA -->
+      <section class="lg:col-span-2 bg-indigo-950/40 p-6 rounded-xl shadow-xl backdrop-blur-md">
+
+        <!-- Word Display -->
+        <div class="word-display text-center mb-8 overflow-x-auto">
+          <h2 id="wordDisplay" 
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-[0.1em]
+              text-white py-4 px-4 sm:px-6 bg-white/5 rounded-xl shadow-inner shadow-purple-900/40 
+              backdrop-blur-sm select-none whitespace-nowrap">
+          </h2>
+        </div>
+        
+        <!-- Letter Inputs -->
+        <div class="inputs flex flex-wrap justify-center gap-2 sm:gap-3 w-full" id="letterInput"></div>
+        
+        <!-- Controls -->
+        <div class="control flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+
+          <button id="checkBtn"
+            class="check w-full sm:flex-1 py-3 px-5 bg-purple-800 hover:bg-purple-700 
+            font-bold rounded-lg shadow-lg disabled:opacity-50">
+            Check Word
+          </button>
+
+          <button id="hintBtn"
+            class="hint w-full sm:w-auto flex items-center justify-center gap-2 
+            py-3 px-4 bg-blue-700 hover:bg-blue-600 font-bold rounded-lg shadow-lg">
+            <span id="hintsLeft"
+              class="bg-white text-blue-700 font-bold text-sm px-2 py-0.5 rounded-full">3</span>
+            Hints
+          </button>
+
+        </div>
+
+        <!-- Message Display -->
+        <div id="messageDisplay" class="message text-center mt-8 text-2xl font-bold"></div>
+
+      </section>
+
+      <!-- SIDEBAR -->
+      <aside class="w-full flex flex-col gap-6">
+
+        <!-- Difficulty Selector -->
+        <div class="bg-indigo-950/70 p-6 rounded-lg shadow-lg backdrop-blur-sm">
+          <h2 class="text-xl font-bold mb-3">Difficulty</h2>
+
+          <select id="difficultySelect"
+            class="w-full p-3 bg-indigo-900 text-white rounded-lg font-semibold shadow-inner border border-white/20">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+
+        <!-- Game Info -->
+        <div class="bg-indigo-950/70 p-6 rounded-lg shadow-lg backdrop-blur-sm">
+          <h2 class="text-xl font-bold mb-3">Game Info</h2>
+
+          <p class="text-white/80">
+            Words count:
+            <span id="questionsCount" class="font-semibold text-white">—</span>
+          </p>
+
+          <p class="text-white/80">
+            Category:
+            <span id="questionsCategory" class="font-semibold text-white">General</span>
+          </p>
+
+          <div id="bullets" class="flex gap-2 flex-wrap mt-3"></div>
+        </div>
+
+        <!-- Key Colors Legend -->
+        <div class="bg-indigo-950/70 p-6 rounded-lg shadow-lg backdrop-blur-sm">
+          <h2 class="text-lg font-bold mb-4">Key Colors</h2>
+
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-7 h-7 rounded-full yes-in-place"></div>
+            <p class="font-semibold text-sm">Letter is correct and in place</p>
+          </div>
+
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-7 h-7 rounded-full not-in-place"></div>
+            <p class="font-semibold text-sm">Letter is correct but not in place</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-7 h-7 rounded-full no"></div>
+            <p class="font-semibold text-sm">Letter is wrong</p>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-950/80 text-white text-center py-4 mt-10 shadow-inner">
+    Guess The Word — By Muller © 2025  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

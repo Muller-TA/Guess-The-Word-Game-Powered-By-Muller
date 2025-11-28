@@ -1,0 +1,147 @@
+{
+  "levels": {
+    "Food & Drinks": {
+      "topic": "Food & Drinks",
+      "words": [
+        {
+          "word": "juice",
+          "hints": [
+            "A sweet drink made from fruits.",
+            "Often comes in orange, apple, or grape flavors."
+          ]
+        },
+        {
+          "word": "burger",
+          "hints": [
+            "A sandwich with meat inside, very popular.",
+            "Often served with fries and ketchup."
+          ]
+        },
+        {
+          "word": "milk",
+          "hints": [
+            "A white drink that comes from cows.",
+            "Used in cereals and coffee."
+          ]
+        },
+        {
+          "word": "chocolate",
+          "hints": [
+            "A sweet treat loved by almost everyone.",
+            "Can be dark, milk, or white."
+          ]
+        },
+        {
+          "word": "fries",
+          "hints": [
+            "Golden potato sticks often eaten with ketchup.",
+            "Common fast food side dish."
+          ]
+        }
+      ]
+    },
+
+    "Countries & Travel": {
+      "topic": "Countries & Travel",
+      "words": [
+        {
+          "word": "egypt",
+          "hints": [
+            "A country known for pyramids and the Nile.",
+            "Capital is Cairo."
+          ]
+        },
+        {
+          "word": "passport",
+          "hints": [
+            "You need it to travel to another country.",
+            "Contains your personal identification and photo."
+          ]
+        },
+        {
+          "word": "airport",
+          "hints": [
+            "A place where planes take off and land.",
+            "Often has terminals and gates."
+          ]
+        },
+        {
+          "word": "london",
+          "hints": [
+            "A famous city known for Big Ben.",
+            "Located in the United Kingdom."
+          ]
+        },
+        {
+          "word": "tourist",
+          "hints": [
+            "A person who travels to explore new places.",
+            "Often takes photos and visits landmarks."
+          ]
+        },
+        {
+          "word": "souvenir",
+          "hints": [
+            "A small gift or memento from a trip.",
+            "Often bought to remember a place."
+          ]
+        }
+      ]
+    },
+
+    "Programming": {
+      "topic": "Programming & Tech",
+      "words": [
+        {
+          "word": "algorithm",
+          "hints": [
+            "A step-by-step process to solve a problem.",
+            "Used in programming and math."
+          ]
+        },
+        {
+          "word": "database",
+          "hints": [
+            "A system used to store and organize large amounts of data.",
+            "Often uses SQL or NoSQL."
+          ]
+        },
+        {
+          "word": "framework",
+          "hints": [
+            "A set of tools that helps build applications faster.",
+            "Examples: React, Angular, Django."
+          ]
+        },
+        {
+          "word": "encryption",
+          "hints": [
+            "A method of securing data by converting it into a secret code.",
+            "Common in online communications."
+          ]
+        },
+        {
+          "word": "compiler",
+          "hints": [
+            "A program that converts code into machine language.",
+            "Translates source code into executable files."
+          ]
+        },
+        {
+          "word": "Debugging",
+          "hints": [
+            "The process of finding and fixing errors in code.",
+            "Helps make programs run correctly."
+          ]
+        },
+        {
+          "word": "Interface",
+          "hints": [
+            "A point where two systems meet and interact.",
+            "Can be graphical or programming related."
+          ]
+        }
+      ]
+    }
+  }
+}

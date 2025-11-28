@@ -1,0 +1,22 @@
+/* Input states glow */
+.yes-in-place {
+    background-color: #8b5cf6;
+    color: white;
+    box-shadow: 0 0 15px #8b5cf6;
+}
+
+.not-in-place {
+    background-color: #06b6d4;
+    color: white;
+    box-shadow: 0 0 15px #06b6d4;
+}
+
+.no {
+    background-color: #1e293b;
+    color: white;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.caret-glow {
+    caret-color: #8b5cf6;
+}
